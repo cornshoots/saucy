@@ -15,15 +15,19 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
+
+        Product::factory()
+        ->times(10)
+        ->create();
         //
 
         
-            $newProduct = new Product();
-            $newProduct->productname = "Ketchup";
-            $newProduct->productdescription = "Regular Tomato Sauce";
-            $newProduct->supplierid = 2;
-            $newProduct->price = 3.5;
-            $newProduct->save();
+            // $newProduct = new Product();
+            // $newProduct->productname = "Ketchup";
+            // $newProduct->productdescription = "Regular Tomato Sauce";
+            // $newProduct->supplierid = 2;
+            // $newProduct->price = 3.5;
+            // $newProduct->save();
 
     }
 }
