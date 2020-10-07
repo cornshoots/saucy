@@ -7,4 +7,5 @@ use Illuminate\Http\Request;
 class ProductFormController extends Controller
 {
     //
+    
 }

@@ -22,4 +22,8 @@ class ProductController extends Controller
         return view('layouts/shoplayout', compact('products'));
     }
 
+    public function showProduct($productid){
+        $products = Product::where('product_id','=', $productid)->get();
+        return view('layouts/productpagelayout', compact('products'));
+    }
 }
