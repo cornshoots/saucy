@@ -30,6 +30,8 @@ Route::get('/shop', function () {
     return view('layouts.shoplayout');
 })->name('shop');;
 
+Route::get('/shop', [ProductController::class, 'showInShop'])->name('shop');
+
 Route::get('/home', [ProductController::class, 'search'])->name('home');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

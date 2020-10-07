@@ -17,4 +17,9 @@ class ProductController extends Controller
         return view('layouts/home', compact('products'));
     }
 
+    public function showInShop(){
+        $products = Product::all();
+        return view('layouts/shoplayout', compact('products'));
+    }
+
 }

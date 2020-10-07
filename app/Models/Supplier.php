@@ -8,11 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Supplier extends Model
 {
     use HasFactory;
-    protected $table = 'suppliers';
+    protected $table = 'supplier';
     protected $primaryKey = 'supplier_id';
 
-    public function supplier(){
-        return $this->belongsToMany("App/Models/Product");
+    public function product(){
+        return $this->belongsToMany(Product::class,'product','supplier_id');
     }
     
 }

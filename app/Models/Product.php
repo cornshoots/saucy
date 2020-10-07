@@ -9,7 +9,7 @@ class Product extends Model
 {
     use HasFactory;
 
-    public function product(){
-        return $this->hasOne("App/Models/Supplier");
+    public function supplier(){
+        return $this->belongsTo(Supplier::class,'supplier_id');
     }
 }

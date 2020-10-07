@@ -17,7 +17,7 @@ class ProductSeeder extends Seeder
     {
 
         Product::factory()
-        ->times(20)
+        ->times(10)
         ->create();
         //
 
