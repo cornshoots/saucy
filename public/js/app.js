@@ -2806,9 +2806,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -24771,13 +24768,13 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "mt-8 text-2xl" }, [
           _vm._v(
-            "\n            Welcome to your Jetstream application!\n        "
+            "\n            Welcome to your Saucy Lil' Box Dashboard\n        "
           )
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "mt-6 text-gray-500" }, [
           _vm._v(
-            "\n            Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed\n            to help you build your application using a development environment that is simple, powerful, and enjoyable. We believe\n            you should love expressing your creativity through programming, so we have spent time carefully crafting the Laravel\n            ecosystem to be a breath of fresh air. We hope you love it.\n        "
+            "\n            Here you can access your account area, add products to our database and view your orders\n        "
           )
         ])
       ]
@@ -26479,7 +26476,7 @@ var render = function() {
                   staticClass:
                     "font-semibold text-xl text-gray-800 leading-tight"
                 },
-                [_vm._v("\n            Dashboard\n        ")]
+                [_vm._v("\n            Sauceboard\n        ")]
               )
             ]
           },
