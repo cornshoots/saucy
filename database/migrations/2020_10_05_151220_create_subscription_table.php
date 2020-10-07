@@ -16,9 +16,9 @@ class CreateSubscriptionTable extends Migration
         Schema::create('subscription', function (Blueprint $table) {
             $table->id('subscription_id');
             $table->timestamps();
-            $table->foreignId('box_id');
-            $table->foreignId('user_id');
-            $table->foreignId('shipping_id');
+            $table->bigInteger('box_id');
+            $table->bigInteger('user_id');
+            $table->bigInteger('shipping_id');
         });
     }
 

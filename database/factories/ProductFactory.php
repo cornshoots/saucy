@@ -22,8 +22,8 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-            'productname' => $this->faker->unique()->streetSuffix." "."Sauce",
-            'supplier_id' => $this->faker->randomDigit,
+            'productname' => $this->faker->unique()->jobTitle." "."Sauce",
+            'supplier_id' => $this->faker->randomDigitNotNull,
             'created_at' => $this->faker->dateTimeThisMonth($max = 'now', $timezone = null),
             'updated_at' => now(),
             'price' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 0, $max = 20),
