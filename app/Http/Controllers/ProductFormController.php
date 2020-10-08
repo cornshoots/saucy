@@ -15,8 +15,11 @@ class ProductFormController extends Controller
     public function store(Request $request)
     {
         $input = $request->validate([
-            'title' => 'required|unique:movies|min:4|max:100',
-            'description' => 'required|min:10'
+            'productname' => 'required|min:4|max:100',
+            'product_description' => 'required|min:10',
+            'price' => "required|regex:/^\d+(\.\d{1,2})?$/|min:0.01|max:100",
+            'supplier_id' => 'required|integer|min:1|max:10',
+            'productimage' => 'required|url'
         ]);
 
         $product = Product::create($input);

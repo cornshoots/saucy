@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Controllers\ProductController;
 
+use App\Http\Controllers\Controller;
+
 use App\Http\Controllers\ProductFormController;
 
 
@@ -30,7 +32,9 @@ Route::get('/productinfo', function () {
 
 Route::get('/shop', [ProductController::class, 'showInShop'])->name('shop');
 
-Route::get('/home', [ProductController::class, 'search'])->name('home');
+Route::get('/home', [Controller::class, 'showHome'])->name('home');
+
+Route::get('products/search', [ProductController::class, 'search'])->name('products.search');
 
 Route::get('/products/create', [ProductFormController::class, 'create'])->name('products.create');
 
