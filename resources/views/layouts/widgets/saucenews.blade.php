@@ -41,7 +41,7 @@
       </div>
       <div class="carousel-item">
         <div class="row">
-          <div class="col-4">
+          <div class="col-6">
             <div class="card newscard">
                 <div class="card-body">
                     <h5 class="card-title">Sauce News 1</h5>
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-8">
+        <div class="col-6">
         <img class="d-block w-100 newsimage" src="{{ asset('img/saucenews3.png') }}" alt="Third slide">
       </div>
     </div>

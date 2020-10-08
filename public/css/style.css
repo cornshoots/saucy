@@ -8,6 +8,9 @@
 .newsimage{
     max-width: 50vw;
 }
+.newscard{
+    min-height: 100%;
+}
 #logowelcome{
     max-width: 40vw;
     align-self: center;
