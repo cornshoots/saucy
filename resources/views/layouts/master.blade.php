@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <title>
     @section("pagetitle")
-    Master Title
+    Saucy Lil' Box
     @show
     </title>
     <style>
