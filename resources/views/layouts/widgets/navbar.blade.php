@@ -1,17 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  {{-- @if (Route::has('login'))
-  <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-      @auth
-          <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
-      @else
-          <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
 
-          @if (Route::has('register'))
-              <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-          @endif
-      @endif
-  </div>
-@endif --}}
   <a class="navbar-brand" href="{{ route('home') }}">
   <img src="{{ asset('img/saucylogo.png') }}" alt="Saucy Lil' Box" id="logo">
   </a>
@@ -33,18 +21,24 @@
       <li class="nav-item">
         <a class="nav-link" href="#">About Us</a>
       </li>
-      {{-- @if --}}
       <li class="nav-item">
-      <a class="nav-link" href="{{ route('dashboard') }}">Account</a>
-      </li>
-        {{-- @else --}}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('login') }}">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('register') }}">Register</a>
-        </li>
-        {{-- @endif --}}
+      @if (Route::has('login'))
+      {{-- <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block"> --}}
+          @auth
+              <a class="nav-link" href="{{ url('/dashboard') }}">Account</a>
+            </li>
+          @else
+              <a class="nav-link" href="{{ route('login') }}">Login</a>
+                </li>
+              @if (Route::has('register'))
+              <li class="nav-item">
+                  <a class="nav-link" href="{{ route('register') }}">Register</a>
+              </li>
+              @endif
+          @endif
+      {{-- </div> --}}
+      
+    @endif
         
 
     </ul>

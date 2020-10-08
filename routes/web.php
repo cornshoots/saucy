@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Controllers\ProductController;
 
+use App\Http\Controllers\ProductFormController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +31,10 @@ Route::get('/productinfo', function () {
 Route::get('/shop', [ProductController::class, 'showInShop'])->name('shop');
 
 Route::get('/home', [ProductController::class, 'search'])->name('home');
+
+Route::get('/products/create', [ProductFormController::class, 'create'])->name('products.create');
+
+Route::post('products', [ProductFormController::class, 'store'])->name('products.store');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');

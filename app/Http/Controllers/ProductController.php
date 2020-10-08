@@ -11,10 +11,9 @@ class ProductController extends Controller
     //
 
     public function search(Request $request){
-        // $movies = Movie::all();
         $search = $request->input('search');
         $products = Product::where('productname', 'like', "%$search%")->orderByDesc('productname')->get();
-        return view('layouts/home', compact('products'));
+        return view('layouts/shoplayout', compact('products'));
     }
 
     public function showInShop(){

@@ -11,12 +11,12 @@
                   <img class="card-img-top" src="{{ $product->productimage }}" alt="Sauce Image" id="sauceicon">
                   <p class="card-text">{{ $product->product_description }}</p>
                   <h5 class="card-text">{{ $product->supplier->supplier_name}}</h5>
-                  {{-- <a href="{{ route('product.show',['productid'=>$product->product_id]) }}" class="btn btn-primary">More Info</a> --}}
+                  <a href="#" class="btn btn-primary">Add to cart</a>
                 </div>
               </div>
         </div>
         <div class="col-2">
-            @include("layouts.widgets.sidebar")
+            @include("layouts.widgets.shoppingsidebar")
         </div>
 
     </div>

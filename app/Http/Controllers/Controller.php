@@ -21,6 +21,9 @@ class Controller extends BaseController
     //     );
 
     // }
+    public function showHome(){
+        return view("layouts/home");
+    }
 
 
 }
