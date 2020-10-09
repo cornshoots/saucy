@@ -11,8 +11,11 @@
                 <div class="col-6">
                     <div class="card newscard">
                         <div class="card-body">
-                            <h5 class="card-title">Sauce News 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Sauce News: Saucy Spillage</h5>
+                            <p class="card-text">BREAKING: An condiment transportation unit has been involved in a collision with
+                              a lorry loaded entirely with chicken nuggets. Flocks of students who's diets consist mainly of nuggets have swarmed
+                              the area and begun consuming the nuggets despite their frozen state.
+                            </p>
                             <a href="#" class="btn btn-primary">Read Full Article</a>
                         </div>
                     </div>
@@ -31,8 +34,12 @@
         <div class="col-6">
           <div class="card newscard">
               <div class="card-body">
-                  <h5 class="card-title">Sauce News 1</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">Sauce News: Guac Attack</h5>
+                  <p class="card-text">An attempted armed robbery occured in taco bell last night. Two armed men
+                    approached the counter and demanded all the cash in the register. The suspects were quickly
+                    deterred when staff began pelting them with rotten avocados and leftover guacamole. No one was
+                    injured.
+                  </p>
                   <a href="#" class="btn btn-primary">Read Full Article</a>
               </div>
           </div>
@@ -44,8 +51,9 @@
           <div class="col-6">
             <div class="card newscard">
                 <div class="card-body">
-                    <h5 class="card-title">Sauce News 1</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Sauce News: Dipping Disasters!</h5>
+                    <p class="card-text">Florida man dips meatballs into McDonalds ketchup dispensers across a
+                      a tri-state area. Victims who consumed the contaminated sauce note salty aftertaste </p>
                     <a href="#" class="btn btn-primary">Read Full Article</a>
                 </div>
             </div>
